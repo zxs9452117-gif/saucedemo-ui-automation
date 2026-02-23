@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/python-web-automation.iml" filepath="$PROJECT_DIR$/.idea/python-web-automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/saucedemo-ui-automation.iml" filepath="$PROJECT_DIR$/.idea/saucedemo-ui-automation.iml" />
     </modules>
   </component>
 </project>

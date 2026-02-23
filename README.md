@@ -36,7 +36,7 @@
 1. **複製專案**:
    ```bash
    git clone <your-repo-url>
-   cd python-web-automation
+   cd saucedemo-ui-automation
    ```
 
 2. **建立並啟動虛擬環境**:
