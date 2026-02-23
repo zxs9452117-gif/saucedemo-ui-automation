@@ -23,10 +23,9 @@ def test_login_locked_out_user(login_page, test_data):
     login_page.navigate("https://www.saucedemo.com/")
     login_page.login(user["username"], user["password"])
 
-    # 假設你在 LoginPage 增加一個獲取錯誤訊息的方法
-    # error_msg = login_page.get_error_message()
-    # assert error_msg == user["error_message"]
-    pass
+    error_msg = login_page.get_error_message()
+    assert error_msg == user["error_message"]
+    print("成功攔截被鎖定用戶的錯誤提示")
 
 
 @pytest.mark.parametrize("user, pwd", [

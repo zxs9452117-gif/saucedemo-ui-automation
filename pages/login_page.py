@@ -10,3 +10,6 @@ class LoginPage(BasePage):
         self.fill_input(self._username, user)
         self.fill_input(self._password, pwd)
         self.click_element(self._login_btn)
+
+    def get_error_message(self):
+        return self.page.locator("[data-test='error']").inner_text()

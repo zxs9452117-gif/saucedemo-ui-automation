@@ -15,12 +15,12 @@ class InventoryPage(BasePage):
 
     def add_first_item_to_cart(self):
         """將列表中的第一個商品加入購物車"""
-        self.do_click(f"({self._add_to_cart_btns}) >> nth=0")
+        self.click_element(f"({self._add_to_cart_btns}) >> nth=0")
 
     def add_item_by_name(self, name):
         """根據產品名稱點擊加入購物車 (動態定位)"""
         selector = f".inventory_item:has-text('{name}') >> button"
-        self.do_click(selector)
+        self.click_element(selector)
 
     def get_cart_count(self):
         """獲取購物車顯示的數字"""
