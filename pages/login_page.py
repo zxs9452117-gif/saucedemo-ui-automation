@@ -1,14 +1,12 @@
-class LoginPage:
+from pages.base_page import BasePage
+class LoginPage(BasePage):
     def __init__(self, page):
-        self.page = page
-        self._username = page.locator("[data-test='username']")
-        self._password = page.locator("[data-test='password']")
-        self._login_btn = page.locator("[data-test='login-button']")
-
-    def navigate(self):
-        self.page.goto("https://www.saucedemo.com/")
+        super().__init__(page)
+        self._username = "id=user-name"
+        self._password = "id=password"
+        self._login_btn = "id=login-button"
 
     def login(self, user, pwd):
-        self._username.fill(user)
-        self._password.fill(pwd)
-        self._login_btn.click()
+        self.fill_input(self._username, user)
+        self.fill_input(self._password, pwd)
+        self.click_element(self._login_btn)

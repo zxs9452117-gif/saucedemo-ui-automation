@@ -1,0 +1,19 @@
+{
+  "users": {
+    "valid_user": {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expected_welcome_text": "Products"
+    },
+    "locked_out_user": {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "error_message": "Epic sadface: Sorry, this user has been locked out."
+    }
+  },
+  "products": [
+    "Sauce Labs Backpack",
+    "Sauce Labs Bike Light",
+    "Sauce Labs Bolt T-Shirt"
+  ]
+}
